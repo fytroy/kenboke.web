@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Company Name] - The Foundry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">[Company Name]</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="models.html">Models</a>
+            <a href="foundry.html" class="active">The Foundry</a>
+            <a href="story.html">Our Story</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="foundry-section hero-secondary">
+    <div class="container">
+        <h1>Forged for You.</h1>
+        <p>Use our interactive configurator to build your dream machine, piece by piece.</p>
+        <div class="configurator">
+            <div class="configurator-image">
+                <img id="bike-image" src="images/maverick-default.jpg" alt="Customizable Motorcycle">
+            </div>
+            <div class="configurator-options">
+                <h2>Choose Your Specs</h2>
+                <div class="option-group">
+                    <label for="model-select">Base Model:</label>
+                    <select id="model-select" onchange="updateBikeImage()">
+                        <option value="maverick">The Maverick</option>
+                        <option value="apex">The Apex Predator</option>
+                        <option value="outlander">The Outlander</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="color-select">Color:</label>
+                    <select id="color-select" onchange="updateBikeImage()">
+                        <option value="black">Phantom Black</option>
+                        <option value="red">Inferno Red</option>
+                        <option value="blue">Deep Blue</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="exhaust-select">Exhaust:</label>
+                    <select id="exhaust-select" onchange="updateBikeImage()">
+                        <option value="standard">Standard Exhaust</option>
+                        <option value="performance">Performance Exhaust (+$1,500)</option>
+                    </select>
+                </div>
+                <div class="total-price">
+                    <h3>Total Price: <span id="price-display">$17,999</span></h3>
+                </div>
+                <button class="btn">Finalize Your Build</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 [Company Name]. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="js/foundry.js"></script>
+</body>
+</html>
