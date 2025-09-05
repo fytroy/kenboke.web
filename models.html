@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenbo Kenya - Contact Us</title>
+    <title>Kenbo Kenya - All Models</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,36 +14,32 @@
         <div class="logo">KENBO</div>
         <nav class="nav">
             <a href="../index.html">Home</a>
-            <a href="models.html">Models</a>
+            <a href="models.html" class="active">Models</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
 
 <section class="page-hero">
     <div class="container">
-        <h1 class="page-title">Get in Touch</h1>
-        <p class="page-subtitle">We'd love to hear from you. Contact our team for any inquiries.</p>
+        <h1 class="page-title">Discover Our Full Range</h1>
+        <p class="page-subtitle">Find the perfect Kenbo motorcycle to power your journey.</p>
+        <div class="filter-controls">
+            <label for="filter-type">Filter by Type:</label>
+            <select id="filter-type">
+                <option value="all">All</option>
+                <option value="Electric">Electric</option>
+                <option value="Petrol">Petrol</option>
+            </select>
+        </div>
     </div>
 </section>
 
 <main class="main-content">
-    <div class="container contact-container">
-        <div class="contact-info">
-            <h3>Contact Details</h3>
-            <p><strong>Head Office:</strong> [Your Address Here]</p>
-            <p><strong>Phone:</strong> (254) 712 345 678</p>
-            <p><strong>Email:</strong> info@kenbokenya.com</p>
-            <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+    <div class="container">
+        <div class="model-grid" id="model-list">
         </div>
-
-        <form action="#" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
     </div>
 </main>
 

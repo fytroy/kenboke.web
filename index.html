@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KENBO KENYA Motorcycles: Unleash Your Legend</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kenbo Kenya - Official Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header class="header">
     <div class="container">
-        <div class="logo">KENBO KENYA</div>
+        <div class="logo">KENBO</div>
         <nav class="nav">
             <a href="index.html" class="active">Home</a>
-            <a href="#models">Models</a>
-            <a href="foundry.html">The Foundry</a>
-            <a href="story.html">Our Story</a>
-            <a href="contact.html">Contact</a>
+            <a href="pages/models.html">Models</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
         </nav>
     </div>
 </header>
 
-<section id="home" class="hero">
+<section class="hero-main">
     <video autoplay muted loop class="hero-video">
-        <source src="videos/hero-video.mp4" type="video/mp4">
+        <source src="assets/video/hero-video.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
-        <h1>Where the Road Becomes Your Legend.</h1>
-        <p>We don't just build motorcycles. We forge machines that connect you to the open road, to the wind, and to a community that understands the call of adventure.</p>
-        <a href="#models" class="btn">Forge Your Legend</a>
+        <h1>Engineered for the Kenyan Journey.</h1>
+        <p>From the city streets to the open roads, Kenbo offers reliable, high-performance motorcycles built for every ride.</p>
+        <a href="pages/models.html" class="btn btn-primary">Discover Our Models</a>
     </div>
 </section>
 
-<section id="models" class="models-section">
+<section class="featured-models">
     <div class="container">
-        <h2>Forged for the Ride.</h2>
+        <h2 class="section-title">Our Featured Models</h2>
         <div class="model-grid">
             <div class="model-card">
-                <img src="images/maverick-default.jpg" alt="The Maverick">
-                <h3>The Maverick</h3>
-                <p>Born for the Open Road.</p>
-                <a href="#" class="btn-secondary">Discover the Maverick</a>
+                <img src="assets/images/KBT-F51.jpg" alt="KBT F51 Electric">
+                <h3>KBT F51 (Electric)</h3>
+                <p class="model-price">KSh 143,000</p>
+                <a href="pages/model-details.html?model=KBT F51 (Electric)" class="btn btn-secondary">Learn More</a>
             </div>
             <div class="model-card">
-                <img src="images/apex-black.jpg" alt="The Apex Predator">
-                <h3>The Apex Predator</h3>
-                <p>Engineered for Adrenaline.</p>
-                <a href="#" class="btn-secondary">Unleash the Apex</a>
+                <img src="assets/images/KB125-CG.jpg" alt="KB125-CG">
+                <h3>KB125-CG</h3>
+                <p class="model-price">KSh 139,000</p>
+                <a href="pages/model-details.html?model=KB125-CG" class="btn btn-secondary">Learn More</a>
             </div>
             <div class="model-card">
-                <img src="images/outlander.jpg" alt="The Outlander">
-                <h3>The Outlander</h3>
-                <p>Built to Conquer.</p>
-                <a href="#" class="btn-secondary">Explore the Outlander</a>
+                <img src="assets/images/KB200ZH-20D.jpg" alt="KB200ZH-20D">
+                <h3>KB200ZH-20D</h3>
+                <p class="model-price">KSh 360,000</p>
+                <a href="pages/model-details.html?model=KB200ZH-20D" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="philosophy">
+    <div class="container">
+        <h2 class="section-title">Reliability. Performance. Innovation.</h2>
+        <p>At Kenbo, we are committed to building bikes that not only meet your needs but exceed your expectations. Our focus on quality and durability ensures you get a partner for the long road ahead.</p>
     </div>
 </section>
 
@@ -66,10 +72,10 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <p>&copy; 2025 PixieCraft. All Rights Reserved.</p>
+        <p>&copy; 2025 Kenbo Kenya. All Rights Reserved.</p>
     </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
