@@ -14,7 +14,13 @@
         <div class="logo">KENBO</div>
         <nav class="nav">
             <a href="../index.html">Home</a>
-            <a href="models.html" class="active">Models</a>
+            <div class="dropdown">
+                <a href="models.html" class="dropbtn active">Models <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="models.html?type=Electric">Electric</a>
+                    <a href="models.html?type=Petrol">Petrol</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -25,14 +31,6 @@
     <div class="container">
         <h1 class="page-title">Discover Our Full Range</h1>
         <p class="page-subtitle">Find the perfect Kenbo motorcycle to power your journey.</p>
-        <div class="filter-controls">
-            <label for="filter-type">Filter by Type:</label>
-            <select id="filter-type">
-                <option value="all">All</option>
-                <option value="Electric">Electric</option>
-                <option value="Petrol">Petrol</option>
-            </select>
-        </div>
     </div>
 </section>
 

@@ -126,13 +126,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Dynamic Models Page Generation ---
     const modelList = document.getElementById('model-list');
-    const filterType = document.getElementById('filter-type');
+    if (modelList) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const typeFilter = urlParams.get('type');
 
-    if (modelList && filterType) {
-        const populateModels = (filter = 'all') => {
-            modelList.innerHTML = ''; // Clear previous models
+        const populateModels = (filter) => {
+            modelList.innerHTML = '';
             Object.entries(modelsData).forEach(([modelName, data]) => {
-                if (filter === 'all' || filter === data.type) {
+                if (!filter || filter === 'all' || filter === data.type) {
                     const modelCard = document.createElement('div');
                     modelCard.className = 'model-card';
                     modelCard.innerHTML = `
@@ -146,8 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
-        filterType.addEventListener('change', (e) => populateModels(e.target.value));
-        populateModels(); // Initial load
+        populateModels(typeFilter);
     }
 
     // --- Dynamic Model Details Page ---
@@ -161,12 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('model-name').textContent = modelName;
             document.getElementById('model-price').textContent = modelData.price;
             document.getElementById('model-image').src = modelData.image;
-
             document.getElementById('engine-type').textContent = modelData.details.engineType;
             document.getElementById('top-speed').textContent = modelData.details.topSpeed;
             document.getElementById('net-weight').textContent = modelData.details.netWeight;
             document.getElementById('dimensions').textContent = modelData.details.dimensions;
-
         } else {
             modelDetailsContainer.innerHTML = '<h1>Model Not Found</h1><p>The motorcycle you are looking for does not exist. Please <a href="models.html">go back to all models</a>.</p>';
         }
